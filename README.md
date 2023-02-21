@@ -1,1 +1,3 @@
 # gcp-lz
+
+git add .
