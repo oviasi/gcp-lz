@@ -43,7 +43,7 @@ function hydrate-env () {
 
     # copy source base to temp customized folder and apply customization
     # check if source-customization/env is empty (assumes it contains at least '.gitkeep'), don't copy base if customization is empty
-    if [ $(ls -A ${SOURCE_CUSTOMIZATION_DIR}/${environment} | wc --lines) -gt 1 ]; then
+    if [ $(ls -A ${SOURCE_CUSTOMIZATION_DIR}/"${environment}" | wc --lines) -gt 1 ]; then
         echo "Copying '${SOURCE_BASE_DIR}/.' to '${env_temp_subdir}/customized' ..."
         cp -rf "${SOURCE_BASE_DIR}/." "${env_temp_subdir}/customized"
     else
