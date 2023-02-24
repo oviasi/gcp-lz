@@ -20,6 +20,7 @@ jobs:
           VALIDATE_ALL_CODEBASE: false
           VALIDATE_JAVASCRIPT_ES: true
           VALIDATE_PYTHON_BLACK: true
+          VALIDATE_MARKDOWN: true
           VALIDATE_HTML: true
           VALIDATE_BASH: true
           # DEFAULT_BRANCH: main
