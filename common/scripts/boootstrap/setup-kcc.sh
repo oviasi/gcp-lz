@@ -15,22 +15,22 @@ Usage: bash setup-kcc.sh PATH_TO_ENV_FILE"
 fi
 
 # source the env file
-source $1
+source "$1"
 
-FOLDER_ID=$(gcloud resource-manager folders create --display-name=$LZ_FOLDER_NAME --organization=$ORG_ID --format="value(name)" --quiet | cut -d "/" -f 2)
-gcloud projects create $PROJECT_ID --set-as-default --organization=$ORG_ID
-gcloud beta billing projects link $PROJECT_ID --billing-account $BILLING_ID 
-gcloud config set project $PROJECT_ID
+FOLDER_ID=$(gcloud resource-manager folders create --display-name="$LZ_FOLDER_NAME" --organization=$ORG_ID --format="value(name)" --quiet | cut -d "/" -f 2)
+gcloud projects create $PROJECT_ID --set-as-default --organization="$ORG_ID"
+gcloud beta billing projects link "$PROJECT_ID" --billing-account "$BILLING_ID" 
+gcloud config set project "$PROJECT_ID"
 gcloud services enable krmapihosting.googleapis.com container.googleapis.com cloudresourcemanager.googleapis.com cloudbilling.googleapis.com serviceusage.googleapis.com servicedirectory.googleapis.com dns.googleapis.com
-export PROJECT_NUM=$(gcloud projects describe $PROJECT_ID --format="value(projectNumber)")
+export PROJECT_NUM=$(gcloud projects describe "$PROJECT_ID" --format="value(projectNumber)")
 # VPC
-gcloud compute networks create $NETWORK --subnet-mode=custom
+gcloud compute networks create "$NETWORK" --subnet-mode=custom
 
 # Subnet
 gcloud compute networks subnets create $SUBNET  \
---network $NETWORK \
+--network "$NETWORK" \
 --range 192.168.0.0/16 \
---region $REGION \
+--region "$REGION" \
 --stack-type=IPV4_ONLY \
 --enable-private-ip-google-access \
 --enable-flow-logs --logging-aggregation-interval=interval-5-sec --logging-flow-sampling=1.0 --logging-metadata=include-all
@@ -42,7 +42,7 @@ gcloud compute routers nats create kcc-router --router=kcc-router --region=$REGI
 
 # enable logging for dns 
 gcloud dns policies create dnspolicy1 \
---networks=$NETWORK \
+--networks="$NETWORK" \
 --enable-logging \
 --description="dns policy to enable logging"
 
