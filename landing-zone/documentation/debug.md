@@ -5,6 +5,6 @@
 
 - VPC service control
 
-![image description](landing-zone/img/service_perimeter.png)
+![image description](img/service_perimeter.png)
 
 # ![img](img/arch.svg)
