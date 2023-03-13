@@ -7,4 +7,6 @@
 
 ![image description](img/service_perimeter.png)
 
-# ![img](img/arch.svg)
+- IAP
+- Config connector
+- Config controler
