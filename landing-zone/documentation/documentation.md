@@ -5,8 +5,8 @@
 1. [https://cloud.google.com/anthos-config-management/docs/concepts/policy-controller](https://cloud.google.com/anthos-config-management/docs/concepts/policy-controller)
 
 - Config controller
-  - config controller 
-  - Managig with config controler - video
+  - config controller link
+  - Managig with config controler - video <br>
         [https://www.youtube.com/watch?v=3lAOr2XdAh4](https://www.youtube.com/watch?v=3lAOr2XdAh4)
 
 
