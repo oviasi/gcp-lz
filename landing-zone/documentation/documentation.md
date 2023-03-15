@@ -1,7 +1,15 @@
-## links 
+## links
 
 - Policy Controller
+
 1. [https://cloud.google.com/anthos-config-management/docs/concepts/policy-controller](https://cloud.google.com/anthos-config-management/docs/concepts/policy-controller)
+
+- Config controller
+  - config controller 
+  - Managig with config controler
+    [https://www.youtube.com/watch?v=3lAOr2XdAh4](https://www.youtube.com/watch?v=3lAOr2XdAh4)
+
+
 
 - VPC service control
 
@@ -10,3 +18,13 @@
 - IAP
 - Config connector
 - Config controler
+
+Some text
+
+- Some
+- List
+
+1. Some
+2. List
+
+Some text

@@ -4,13 +4,14 @@
 
 ### Bug Fixes
 
-* add local-config annotations to kptfiles 
+* add local-config annotations to kptfiles
 
 ## [0.1.0]
 
 ### Features
 
-* Implement landing-zone-lite and fix some issues 
+* Implement landing-zone-lite and fix some issues
+
 ### Bug Fixes
 
-* add correct attribution for lz lite 
+* add correct attribution for lz lite
