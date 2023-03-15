@@ -6,8 +6,8 @@
 
 - Config controller
   - config controller 
-  - Managig with config controler
-    [https://www.youtube.com/watch?v=3lAOr2XdAh4](https://www.youtube.com/watch?v=3lAOr2XdAh4)
+  - Managig with config controler - video
+    - [https://www.youtube.com/watch?v=3lAOr2XdAh4](https://www.youtube.com/watch?v=3lAOr2XdAh4)
 
 
 
